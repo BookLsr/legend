@@ -6,7 +6,11 @@
 
 	<groupId>com.wang</groupId>
 	<artifactId>legend</artifactId>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
+	<modules>
+		<module>legendservice</module>
+	</modules>
 
 
 </project>
