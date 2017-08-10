@@ -17,6 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<springboot.version>1.5.6.RELEASE</springboot.version>
+		<mybatis.springBoot.version>1.3.0</mybatis.springBoot.version>
 	</properties>
 
 	<!-- dependencyManagement 中的 dependencies 元素只表明依赖项版本的优先选择,项目依赖 -->
@@ -33,9 +34,21 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<!-- SpringBoot test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+		<!-- SpringBoot Jdbc -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<!-- Mybatis -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis.springBoot.version}</version>
 		</dependency>
 	</dependencies>
 

@@ -1,0 +1,6 @@
+mysql:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.14.126.80:3306/legend?useUnicode=true&characterEncoding=utf-8
+    userName: login
+    password: wang1994
+
