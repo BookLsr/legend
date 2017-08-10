@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wang.dao.HeroDetailDao">
+    <select id = "getHeroDetailById" resultType="HeroDetailEntity">
+        SELECT
+          `id`,
+          `hero_name`,
+          `image`,
+          `property`,
+          `sex`,
+          `price`,
+          `attack_type`,
+          `create_time`,
+          `update_time`,
+          `is_free_week`,
+          `way_type`,
+          `ability_type`,
+          `hero_alias`
+        FROM
+          `hero_detail`
+        WHERE id = #{id}
+    </select>
+</mapper>

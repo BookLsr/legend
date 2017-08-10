@@ -41,11 +41,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-		<!-- SpringBoot Jdbc -->
-		<dependency>
+		<!-- SpringBoot Jdbc 用于使用JDBCTemplate，Mybatis无需使用 -->
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
+		</dependency>-->
 		<!-- Mybatis -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -57,6 +57,10 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>1.0.18</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 	</dependencies>
 

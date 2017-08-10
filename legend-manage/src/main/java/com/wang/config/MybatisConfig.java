@@ -45,7 +45,7 @@ public class MybatisConfig implements TransactionManagementConfigurer {
      * @Author windpursuer
      * @Date 2017/8/10 17:09
      */
-    @Bean
+    @Bean(name = "sqlSessionFactory")
     public SqlSessionFactory sqlsessionFactoryBean() {
         //DefaultVFS在获取jar上存在问题，使用springBoot只能修改
         VFS.addImplClass(SpringBootVFS.class);
@@ -68,7 +68,7 @@ public class MybatisConfig implements TransactionManagementConfigurer {
      * @Author windpursuer
      * @Date 2017/8/10 17:09
      */
-    @Bean
+    @Bean(name = "sqlSessionTemplate")
     public SqlSessionTemplate sqlSessionTemplate(@Qualifier("sqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
