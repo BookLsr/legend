@@ -9,9 +9,29 @@
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<modules>
-		<module>legend-manage</module>
 		<module>legend-service</module>
 	</modules>
 
+
+	<properties>
+		<java.version>1.8</java.version>
+		<springboot.version>2.0.0.M3</springboot.version>
+	</properties>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-parent</artifactId>
+				<version>${springboot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<dependencies>
+
+	</dependencies>
 
 </project>
