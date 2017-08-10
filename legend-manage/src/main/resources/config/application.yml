@@ -1,6 +1,30 @@
 mysql:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://106.14.126.80:3306/legend?useUnicode=true&characterEncoding=utf-8
-    userName: login
+    username: login
     password: wang1994
+    # 连接池初始化连接数,该数最好与最小连接数一致
+    initialSize: 5
+    # 连接池初始化最小连接数,该数最好与初始化连接数一致
+    minIdle: 5
+    # 连接池最大连接数
+    maxActive: 10
+    # 配置获取连接等待超时的时间
+    maxWait: 5000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 30000
+    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    timeBetweenEvictionRunsMillis: 60000
+    # 连接池中连接是否测试连接
+    testWhileIdle: false
+    # 日志组件，以及监控级别
+    filters: slf4j,stat
+    # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+mybatis:
+    typeAliasesPackage: com.wang.entity
+    mapperLocations: classpath:mapper/*.xml
+
+
 

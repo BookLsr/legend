@@ -11,5 +11,11 @@
 
 	<artifactId>legend-service</artifactId>
 
-
+	<dependencies>
+		<dependency>
+			<groupId>com.wang</groupId>
+			<artifactId>legend-dao</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
