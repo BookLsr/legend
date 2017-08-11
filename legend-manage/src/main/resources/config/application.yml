@@ -23,8 +23,16 @@ mysql:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 
 mybatis:
+    # 实体包别名
     typeAliasesPackage: com.wang.entity
+    # mapper.xml位置
     mapperLocations: classpath:mapper/*.xml
+
+spring:
+    resources:
+        # 设置静态资源访问
+        static-locations: classpath:/
+
 
 
 
