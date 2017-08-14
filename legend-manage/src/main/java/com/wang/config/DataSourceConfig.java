@@ -59,10 +59,11 @@ public class DataSourceConfig {
         dataSource.setTestWhileIdle(testWhileIdle);
         try {
             dataSource.setFilters(filters);
+            dataSource.setConnectionProperties(connectionProperties);
+            dataSource.init();
         } catch (SQLException e) {
            logger.error("连接池设置日志组件失败，原因：【{}】", e.getMessage());
         }
-        dataSource.setConnectionProperties(connectionProperties);
         return dataSource;
     }
 

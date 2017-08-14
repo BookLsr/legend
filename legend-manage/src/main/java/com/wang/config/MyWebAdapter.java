@@ -14,6 +14,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class MyWebAdapter extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+        /**
+         * 可需要可不要，，主要需要在yml文件中配置静态资源访问路径
+         */
         registry.addViewController( "/" ).setViewName( "index.html" );
         registry.setOrder( Ordered.HIGHEST_PRECEDENCE );
         super.addViewControllers(registry);

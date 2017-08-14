@@ -28,10 +28,19 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- Jersey相关 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jersey</artifactId>
+		</dependency>
+
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
