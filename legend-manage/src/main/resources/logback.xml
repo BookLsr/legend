@@ -69,6 +69,7 @@
     <logger name ="org.springframework" level="ERROR"/>
     <logger name="org.mybatis" level="ERROR"/>
     <logger name="ch.qos.logback" level="ERROR"/>
+    <logger name="org.apache" level="ERROR"/>
     <logger name="*" level="DEBUG" />
     <root level="DEBUG">
         <appender-ref ref="STDOUT" />

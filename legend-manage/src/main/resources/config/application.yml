@@ -29,9 +29,19 @@ mybatis:
     mapperLocations: classpath:mapper/*.xml
 
 spring:
+    application:
+        name: legend
     resources:
         # 设置静态资源访问
         static-locations: classpath:/
+
+eureka:
+    username: admin
+    password: admin
+    client:
+        serviceUrl:
+            defaultZone: http://${eureka.username}:${eureka.password}@106.14.126.80:8761/eureka
+
 
 
 

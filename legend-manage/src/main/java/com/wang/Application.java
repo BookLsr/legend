@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @Date 2017/8/10 10:20
  */
 @SpringBootApplication
+@EnableEurekaClient
 /*@ServletComponentScan   用于扫描Servlet，SpringBootApplication代替，所以可以不用*/
 public class Application extends SpringBootServletInitializer {
     /**
