@@ -30,7 +30,7 @@ mybatis:
 
 spring:
     application:
-        name: legend
+        name: legend1
     resources:
         # 设置静态资源访问
         static-locations: classpath:/
@@ -39,9 +39,13 @@ eureka:
     username: admin
     password: admin
     client:
+        #enabled: true
+        #registerWithEureka: true
+        #fetchRegistry: true
         serviceUrl:
             defaultZone: http://${eureka.username}:${eureka.password}@106.14.126.80:8761/eureka
 
+param: local
 
 
 

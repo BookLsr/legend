@@ -1,0 +1,14 @@
+# ===================================================================
+# Spring Cloud Config bootstrap configuration for the "test" profile
+# 对于访问配置中心获取配置文件需要在bootstrap中配置，，bootstrap的加载在application.yml文件的前面
+# ===================================================================
+
+spring:
+    cloud:
+        config:
+            fail-fast: true
+            uri: http://admin:admin@106.14.126.80:8761/config
+            name: legend1
+            profile: dev
+            # 本地存储则该参数无用，用于指定Git分支
+            label: master
