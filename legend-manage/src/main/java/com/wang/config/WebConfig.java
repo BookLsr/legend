@@ -26,12 +26,12 @@ public class WebConfig {
     public ServletRegistrationBean servletJerseyRegistrationBean() {
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean();
         servletRegistrationBean.setServlet(new ServletContainer());
-        Map<String, String> param = new HashMap<>();
+        Map<String, String> param = new HashMap<String, String>();
         param.put("jersey.config.server.provider.packages", "com.wang.controller,com.wang.web");
         param.put("jersey.config.server.wadl.disableWadl", "true");
         servletRegistrationBean.setInitParameters(param);
         servletRegistrationBean.setLoadOnStartup(1);
-        List<String> pattern = new ArrayList<>();
+        List<String> pattern = new ArrayList<String>();
         pattern.add("/server/*");
         servletRegistrationBean.setUrlMappings(pattern);
         logger.debug("jerseyServlet设置");

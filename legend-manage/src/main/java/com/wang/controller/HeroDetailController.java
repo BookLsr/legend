@@ -24,9 +24,11 @@ public class HeroDetailController {
 
     @RequestMapping("getHero")
     @ResponseBody
-    public HeroDetailEntity getHeroDetail() {
-        HeroDetailEntity heroDetailEntity = heroDetailService.getHeroDetailById(1);
+    public HeroDetailEntity getHeroDetail()throws Exception {
+        //HeroDetailEntity heroDetailEntity = heroDetailService.getHeroDetailById(1);
+        //heroDetailService.saveUser2("li", "ds");
+        heroDetailService.saveUser2("as", "ds");
         logger.debug("Controller运行");
-        return heroDetailEntity;
+        return null;
     }
 }

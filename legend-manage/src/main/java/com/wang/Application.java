@@ -19,6 +19,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application extends SpringBootServletInitializer {
     /**
      * Description 使用外部tomcat
+     *
      * @Author windpursuer
      * @Date 2017/8/10 14:34
      */
@@ -30,6 +31,7 @@ public class Application extends SpringBootServletInitializer {
 
     /**
      * Description springboot启动主函数
+     *
      * @Author windpursuer
      * @Date 2017/8/10 10:55
      */

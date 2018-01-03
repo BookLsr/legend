@@ -14,4 +14,9 @@ public interface HeroDetailService {
      * @Date 2017/8/10 19:28
      */
     HeroDetailEntity getHeroDetailById(int id);
+
+
+    void saveUser1(String name, String age) throws Exception;
+
+    void saveUser2(String name, String age) throws Exception;
 }

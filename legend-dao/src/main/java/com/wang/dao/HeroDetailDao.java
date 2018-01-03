@@ -2,6 +2,7 @@ package com.wang.dao;
 
 import com.wang.entity.HeroDetailEntity;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * Description HeroDetailDao层
@@ -16,4 +17,6 @@ public interface HeroDetailDao {
      * @Date 2017/8/10 19:26
      */
     HeroDetailEntity getHeroDetailById(int id);
+
+    void insertHero(@Param("name") String name,@Param("age") String age);
 }

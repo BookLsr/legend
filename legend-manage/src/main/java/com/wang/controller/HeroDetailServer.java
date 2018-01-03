@@ -28,8 +28,9 @@ public class HeroDetailServer {
     @GET
     @Path("getHero")
     public Object getHeroDetail(@QueryParam("id") String id)  throws Exception {
-        HeroDetailEntity heroDetailEntity = heroDetailService.getHeroDetailById(1);
+       // HeroDetailEntity heroDetailEntity = heroDetailService.getHeroDetailById(1);
+        heroDetailService.saveUser2("li", "ds");
         logger.debug("Jersey运行,【{}】", id);
-        return heroDetailEntity;
+        return null;
     }
 }

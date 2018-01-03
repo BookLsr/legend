@@ -3,21 +3,25 @@
 <mapper namespace="com.wang.dao.HeroDetailDao">
     <select id = "getHeroDetailById" resultType="HeroDetailEntity">
         SELECT
-          `id`,
-          `hero_name`,
-          `image`,
-          `property`,
-          `sex`,
-          `price`,
-          `attack_type`,
-          `create_time`,
-          `update_time`,
-          `is_free_week`,
-          `way_type`,
-          `ability_type`,
-          `hero_alias`
+        `id`,
+        `hero_name`,
+        `image`,
+        `property`,
+        `sex`,
+        `price`,
+        `attack_type`,
+        `create_time`,
+        `update_time`,
+        `is_free_week`,
+        `way_type`,
+        `ability_type`,
+        `hero_alias`
         FROM
-          `hero_detail`
+        `hero_detail`
         WHERE id = #{id}
     </select>
+
+    <insert id = "insertHero">
+        insert into `test_tran` (`age`, `name`) value (#{age}, #{name})
+    </insert>
 </mapper>
